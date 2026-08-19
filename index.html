@@ -1,0 +1,3000 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Catálogo Crie Geremias - Impressão 3D personalizada para profissionais e empresas da área da saúde.">
+
+    <title>Crie Geremias | Catálogo Saúde 3D</title>
+
+
+    <!-- =====================================================
+         FONTES
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           CORES DA MARCA
+        ===================================================== */
+
+        :root {
+
+            --violeta: #6B21A8;
+            --violeta-medio: #8B5CF6;
+            --violeta-claro: #EDE9FE;
+            --lilas-fundo: #F8F5FF;
+            --lilas-suave: #FBF9FF;
+
+            --azul: #2563EB;
+            --azul-claro: #DBEAFE;
+
+            --amarelo: #FACC15;
+            --amarelo-claro: #FEF9C3;
+
+            --branco: #FFFFFF;
+
+            --grafite: #1F2937;
+            --cinza: #6B7280;
+            --cinza-claro: #E5E7EB;
+
+            --verde: #25D366;
+            --verde-hover: #1DA851;
+
+            --sombra:
+                0 15px 45px rgba(107, 33, 168, 0.10);
+
+            --radius: 24px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family: "Nunito", sans-serif;
+
+            background: var(--lilas-fundo);
+
+            color: var(--grafite);
+
+            line-height: 1.6;
+        }
+
+
+        img {
+
+            max-width: 100%;
+
+            display: block;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background:
+                rgba(255, 255, 255, 0.96);
+
+            backdrop-filter: blur(15px);
+
+            border-bottom:
+                1px solid
+                rgba(107, 33, 168, 0.08);
+        }
+
+
+        .nav {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            min-height: 76px;
+
+            padding: 8px 24px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        /* =====================================================
+           LOGO
+        ===================================================== */
+
+        .logo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            min-width: 0;
+        }
+
+
+        .logo-image {
+
+            width: 58px;
+
+            height: 58px;
+
+            object-fit: contain;
+
+            border-radius: 14px;
+
+            flex-shrink: 0;
+        }
+
+
+        .logo-text strong {
+
+            display: block;
+
+            font-size: 20px;
+
+            font-weight: 800;
+
+            color: var(--violeta);
+
+            line-height: 1.1;
+        }
+
+
+        .logo-text span {
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 9px;
+
+            letter-spacing: 2px;
+
+            color: var(--cinza);
+        }
+
+
+        nav {
+
+            display: flex;
+
+            gap: 25px;
+
+            align-items: center;
+        }
+
+
+        nav a {
+
+            color: var(--grafite);
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+
+            color: var(--violeta);
+        }
+
+
+        .nav-whatsapp {
+
+            background: var(--verde);
+
+            color: white !important;
+
+            padding: 11px 18px;
+
+            border-radius: 30px;
+        }
+
+
+        .nav-whatsapp:hover {
+
+            background: var(--verde-hover);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 90px 24px 80px;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(139, 92, 246, 0.13),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(37, 99, 235, 0.10),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #FFFFFF,
+                    #F7F2FF
+                );
+        }
+
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 250px;
+
+            height: 250px;
+
+            border:
+                1px solid
+                rgba(107, 33, 168, 0.08);
+
+            border-radius: 50%;
+
+            right: -80px;
+
+            bottom: -80px;
+        }
+
+
+        .hero-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1.2fr 0.8fr;
+
+            align-items: center;
+
+            gap: 60px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .hero-label {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            background: var(--violeta-claro);
+
+            color: var(--violeta);
+
+            padding: 8px 15px;
+
+            border-radius: 30px;
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                clamp(40px, 6vw, 72px);
+
+            line-height: 1.05;
+
+            margin-bottom: 22px;
+
+            letter-spacing: -2px;
+        }
+
+
+        .hero h1 span {
+
+            color: var(--violeta);
+        }
+
+
+        .hero-description {
+
+            font-size: 18px;
+
+            max-width: 650px;
+
+            color: var(--cinza);
+
+            margin-bottom: 30px;
+        }
+
+
+        .hero-slogan {
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 14px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            color: var(--violeta);
+
+            font-weight: 600;
+
+            margin-bottom: 30px;
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            padding: 15px 25px;
+
+            border-radius: 14px;
+
+            font-weight: 800;
+
+            transition: 0.3s;
+        }
+
+
+        .btn-primary {
+
+            background: var(--violeta);
+
+            color: white;
+
+            box-shadow:
+                0 10px 25px
+                rgba(107, 33, 168, 0.20);
+        }
+
+
+        .btn-primary:hover {
+
+            background: #58198A;
+
+            transform: translateY(-3px);
+        }
+
+
+        .btn-secondary {
+
+            background: white;
+
+            color: var(--violeta);
+
+            border:
+                1px solid
+                var(--violeta-claro);
+        }
+
+
+        .btn-secondary:hover {
+
+            background: var(--violeta-claro);
+        }
+
+
+        /* =====================================================
+           HERO CARD
+        ===================================================== */
+
+        .hero-card {
+
+            background:
+                rgba(255,255,255,0.88);
+
+            border:
+                1px solid
+                rgba(107,33,168,0.08);
+
+            border-radius: 35px;
+
+            padding: 35px;
+
+            box-shadow: var(--sombra);
+
+            position: relative;
+        }
+
+
+        .hero-card::before {
+
+            content: "✦";
+
+            position: absolute;
+
+            top: -18px;
+
+            right: 25px;
+
+            width: 55px;
+
+            height: 55px;
+
+            border-radius: 18px;
+
+            background: var(--amarelo);
+
+            transform: rotate(12deg);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #7A5A00;
+
+            font-size: 24px;
+
+            font-weight: 900;
+        }
+
+
+        .hero-card-icon {
+
+            width: 70px;
+
+            height: 70px;
+
+            border-radius: 22px;
+
+            background: var(--violeta-claro);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 34px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .hero-card h3 {
+
+            font-size: 24px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .hero-card p {
+
+            color: var(--cinza);
+        }
+
+
+        .hero-card strong {
+
+            display: block;
+
+            color: var(--violeta);
+
+            font-size: 17px;
+
+            margin-top: 18px;
+        }
+
+
+        /* =====================================================
+           PERSONALIZAÇÃO
+        ===================================================== */
+
+        .custom {
+
+            max-width: 1200px;
+
+            margin: 60px auto;
+
+            padding: 0 24px;
+        }
+
+
+        .custom-box {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--violeta),
+                    #7C3AED,
+                    var(--azul)
+                );
+
+            color: white;
+
+            border-radius: 30px;
+
+            padding: 45px;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr auto;
+
+            align-items: center;
+
+            gap: 30px;
+
+            box-shadow: var(--sombra);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .custom-box::after {
+
+            content: "✦";
+
+            position: absolute;
+
+            right: 35px;
+
+            bottom: -20px;
+
+            font-size: 130px;
+
+            opacity: 0.10;
+        }
+
+
+        .custom-box h2 {
+
+            font-size: 32px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .custom-box p {
+
+            color:
+                rgba(255,255,255,0.88);
+
+            max-width: 700px;
+        }
+
+
+        .custom-highlight {
+
+            background:
+                rgba(255,255,255,0.15);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.20);
+
+            padding: 15px 20px;
+
+            border-radius: 16px;
+
+            font-weight: 800;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* =====================================================
+           CATÁLOGO
+        ===================================================== */
+
+        .catalog {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 40px 24px 90px;
+        }
+
+
+        .section-heading {
+
+            text-align: center;
+
+            max-width: 750px;
+
+            margin: 0 auto 45px;
+        }
+
+
+        .section-heading span {
+
+            color: var(--violeta);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        .section-heading h2 {
+
+            font-size: 40px;
+
+            margin: 10px 0;
+
+            letter-spacing: -1px;
+        }
+
+
+        .section-heading p {
+
+            color: var(--cinza);
+        }
+
+
+        /* =====================================================
+           BUSCA
+        ===================================================== */
+
+        .search-area {
+
+            max-width: 700px;
+
+            margin: 0 auto 45px;
+
+            position: relative;
+        }
+
+
+        .search-area input {
+
+            width: 100%;
+
+            padding:
+                17px 20px 17px 50px;
+
+            border:
+                1px solid
+                var(--cinza-claro);
+
+            border-radius: 16px;
+
+            background: white;
+
+            outline: none;
+
+            font-family: inherit;
+
+            font-size: 15px;
+
+            transition: 0.3s;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,0.03);
+        }
+
+
+        .search-area input:focus {
+
+            border-color:
+                var(--violeta-medio);
+
+            box-shadow:
+                0 0 0 4px
+                rgba(139,92,246,0.10);
+        }
+
+
+        .search-icon {
+
+            position: absolute;
+
+            left: 18px;
+
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            font-size: 19px;
+        }
+
+
+        /* =====================================================
+           GRID
+        ===================================================== */
+
+        .products-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        /* =====================================================
+           CARD
+        ===================================================== */
+
+        .product-card {
+
+            background: white;
+
+            border:
+                1px solid
+                rgba(107,33,168,0.08);
+
+            border-radius: var(--radius);
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 30px
+                rgba(107,33,168,0.06);
+
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        .product-card:hover {
+
+            transform:
+                translateY(-7px);
+
+            box-shadow:
+                0 20px 45px
+                rgba(107,33,168,0.13);
+        }
+
+
+        /* =====================================================
+           ÁREA DA IMAGEM
+        ===================================================== */
+
+        .product-image {
+
+            height: 245px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #F7F2FF,
+                    #FFFFFF
+                );
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 20px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .product-image::after {
+
+            content: "3D";
+
+            position: absolute;
+
+            top: 14px;
+
+            left: 14px;
+
+            background: var(--violeta);
+
+            color: white;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            padding: 5px 9px;
+
+            border-radius: 8px;
+
+            letter-spacing: 1px;
+
+            z-index: 3;
+        }
+
+
+        .product-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+
+            transition:
+                transform 0.3s;
+        }
+
+
+        .product-card:hover
+        .product-image img {
+
+            transform:
+                scale(1.05);
+        }
+
+
+        /* =====================================================
+           FALLBACK DA IMAGEM
+        ===================================================== */
+
+        .image-fallback {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            color: var(--violeta);
+
+            width: 100%;
+
+            height: 100%;
+        }
+
+
+        .image-fallback-icon {
+
+            font-size: 48px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .image-fallback strong {
+
+            font-size: 14px;
+        }
+
+
+        .image-fallback small {
+
+            font-size: 11px;
+
+            color: #9CA3AF;
+
+            margin-top: 4px;
+        }
+
+
+        /* =====================================================
+           INFORMAÇÕES
+        ===================================================== */
+
+        .product-info {
+
+            padding: 23px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            flex: 1;
+        }
+
+
+        .product-name {
+
+            font-size: 20px;
+
+            font-weight: 800;
+
+            margin-bottom: 7px;
+
+            color: var(--grafite);
+        }
+
+
+        .product-weight {
+
+            color: var(--cinza);
+
+            font-size: 13px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .product-weight strong {
+
+            color: var(--violeta);
+        }
+
+
+        .personalized {
+
+            display: inline-flex;
+
+            width: fit-content;
+
+            align-items: center;
+
+            gap: 6px;
+
+            background:
+                var(--amarelo-claro);
+
+            color: #8A6500;
+
+            padding: 6px 9px;
+
+            border-radius: 8px;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* =====================================================
+           PREÇOS
+        ===================================================== */
+
+        .prices {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 8px;
+
+            margin-top: auto;
+        }
+
+
+        .price-box {
+
+            background:
+                var(--lilas-fundo);
+
+            border:
+                1px solid
+                #EDE9FE;
+
+            padding: 10px;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            transition: 0.2s;
+        }
+
+
+        .price-box:hover {
+
+            background:
+                var(--violeta-claro);
+        }
+
+
+        .price-box.highlight {
+
+            background:
+                var(--violeta);
+
+            color: white;
+
+            border-color:
+                var(--violeta);
+        }
+
+
+        .price-box small {
+
+            display: block;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            opacity: 0.75;
+
+            margin-bottom: 2px;
+        }
+
+
+        .price {
+
+            font-size: 17px;
+
+            font-weight: 900;
+        }
+
+
+        .price-note {
+
+            text-align: center;
+
+            color: var(--cinza);
+
+            font-size: 10px;
+
+            margin-top: 12px;
+        }
+
+
+        /* =====================================================
+           WHATSAPP DO PRODUTO
+        ===================================================== */
+
+        .product-whatsapp {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 7px;
+
+            margin-top: 15px;
+
+            background:
+                #F0FDF4;
+
+            color:
+                #15803D;
+
+            border:
+                1px solid
+                #DCFCE7;
+
+            border-radius: 12px;
+
+            padding: 11px;
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            transition: 0.3s;
+        }
+
+
+        .product-whatsapp:hover {
+
+            background:
+                var(--verde);
+
+            color: white;
+
+            border-color:
+                var(--verde);
+        }
+
+
+        /* =====================================================
+           FRASE
+        ===================================================== */
+
+        .quote-section {
+
+            padding: 80px 24px;
+
+            background: white;
+
+            text-align: center;
+
+            border-top:
+                1px solid #F0EBF8;
+
+            border-bottom:
+                1px solid #F0EBF8;
+        }
+
+
+        .quote {
+
+            max-width: 800px;
+
+            margin: auto;
+        }
+
+
+        .quote-mark {
+
+            color: var(--amarelo);
+
+            font-size: 60px;
+
+            line-height: 0.7;
+
+            margin-bottom: 20px;
+        }
+
+
+        .quote h2 {
+
+            font-size:
+                clamp(28px, 5vw, 46px);
+
+            line-height: 1.2;
+
+            color: var(--violeta);
+
+            margin-bottom: 18px;
+        }
+
+
+        .quote p {
+
+            color: var(--cinza);
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-size: 13px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta {
+
+            max-width: 1000px;
+
+            margin: 80px auto;
+
+            padding: 0 24px;
+        }
+
+
+        .cta-box {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #F1E9FF,
+                    #EEF5FF
+                );
+
+            border:
+                1px solid #E5D9FF;
+
+            border-radius: 32px;
+
+            padding: 55px 40px;
+
+            text-align: center;
+        }
+
+
+        .cta-box h2 {
+
+            font-size: 36px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .cta-box h2 span {
+
+            color:
+                var(--violeta);
+        }
+
+
+        .cta-box p {
+
+            color:
+                var(--cinza);
+
+            max-width: 650px;
+
+            margin:
+                0 auto 25px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            background:
+                #21132E;
+
+            color: white;
+
+            padding:
+                55px 24px 30px;
+        }
+
+
+        .footer-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr 1fr;
+
+            gap: 40px;
+        }
+
+
+        .footer-brand {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: flex-start;
+        }
+
+
+        .footer-logo {
+
+            width: 100px;
+
+            height: 70px;
+
+            object-fit: contain;
+
+            margin-bottom: 10px;
+        }
+
+
+        .footer-brand strong {
+
+            font-size: 23px;
+
+            color: white;
+        }
+
+
+        .footer-brand p {
+
+            color:
+                #C9BDD1;
+
+            margin-top: 12px;
+
+            max-width: 350px;
+        }
+
+
+        .footer-column h4 {
+
+            margin-bottom: 15px;
+
+            color: white;
+        }
+
+
+        .footer-column p,
+        .footer-column a {
+
+            color:
+                #C9BDD1;
+
+            font-size: 14px;
+
+            display: block;
+
+            margin-bottom: 8px;
+        }
+
+
+        .footer-column a:hover {
+
+            color: white;
+        }
+
+
+        .footer-bottom {
+
+            max-width: 1200px;
+
+            margin:
+                40px auto 0;
+
+            padding-top: 25px;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.10);
+
+            color:
+                #A99BAF;
+
+            font-size: 12px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        /* =====================================================
+           WHATSAPP FLUTUANTE
+        ===================================================== */
+
+        .floating-whatsapp {
+
+            position: fixed;
+
+            right: 22px;
+
+            bottom: 22px;
+
+            width: 58px;
+
+            height: 58px;
+
+            background:
+                var(--verde);
+
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 26px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(37,211,102,0.30);
+
+            z-index: 999;
+
+            transition: 0.3s;
+        }
+
+
+        .floating-whatsapp:hover {
+
+            transform:
+                scale(1.08);
+
+            background:
+                var(--verde-hover);
+        }
+
+
+        /* =====================================================
+           SEM RESULTADO
+        ===================================================== */
+
+        .no-results {
+
+            display: none;
+
+            text-align: center;
+
+            grid-column:
+                1 / -1;
+
+            padding: 60px;
+
+            color:
+                var(--cinza);
+        }
+
+
+        /* =====================================================
+           RESPONSIVIDADE
+        ===================================================== */
+
+        @media (max-width: 1000px) {
+
+            .hero-container {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .hero-card {
+
+                max-width: 600px;
+            }
+
+
+            .products-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .footer-container {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            nav a:not(.nav-whatsapp) {
+
+                display: none;
+            }
+
+
+            .nav {
+
+                min-height: 68px;
+
+                padding:
+                    6px 15px;
+            }
+
+
+            .logo-image {
+
+                width: 48px;
+
+                height: 48px;
+            }
+
+
+            .logo-text strong {
+
+                font-size: 17px;
+            }
+
+
+            .hero {
+
+                padding:
+                    65px 20px;
+            }
+
+
+            .hero h1 {
+
+                font-size: 42px;
+            }
+
+
+            .hero-description {
+
+                font-size: 16px;
+            }
+
+
+            .custom-box {
+
+                grid-template-columns: 1fr;
+
+                padding: 30px 25px;
+            }
+
+
+            .custom-box h2 {
+
+                font-size: 27px;
+            }
+
+
+            .products-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .section-heading h2 {
+
+                font-size: 31px;
+            }
+
+
+            .product-image {
+
+                height: 270px;
+            }
+
+
+            .footer-container {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .footer-bottom {
+
+                flex-direction: column;
+            }
+
+
+            .cta-box {
+
+                padding:
+                    40px 25px;
+            }
+
+
+            .cta-box h2 {
+
+                font-size: 30px;
+            }
+
+        }
+
+
+        @media (max-width: 400px) {
+
+            .hero-buttons {
+
+                flex-direction: column;
+            }
+
+
+            .btn {
+
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header>
+
+        <div class="nav">
+
+
+            <a href="#" class="logo">
+
+                <!-- LOGO DA CRIE GEREMIAS -->
+
+                <img
+                    src="./logo.png"
+                    alt="Crie Geremias"
+                    class="logo-image"
+                    onerror="logoNaoEncontrada(this)"
+                >
+
+
+                <div class="logo-text">
+
+                    <strong>
+                        Crie Geremias
+                    </strong>
+
+                    <span>
+                        IMPRESSÃO 3D
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <nav>
+
+                <a href="#catalogo">
+                    Catálogo
+                </a>
+
+                <a href="#personalizacao">
+                    Personalização
+                </a>
+
+                <a
+                    href="https://goo.su/wXcxJn"
+                    target="_blank"
+                    class="nav-whatsapp">
+
+                    WhatsApp
+
+                </a>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+        <div class="hero-container">
+
+
+            <div>
+
+                <div class="hero-label">
+
+                    ✦ Catálogo Especial
+                    • Linha Saúde
+
+                </div>
+
+
+                <h1>
+
+                    Ideias que viram
+                    <span>
+                        realidade.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Produtos impressos em 3D para
+                    organizar, facilitar e transformar
+                    a rotina de profissionais e empresas
+                    da área da saúde.
+
+                </p>
+
+
+                <div class="hero-slogan">
+
+                    Pensou? A gente cria.
+
+                </div>
+
+
+                <div class="hero-buttons">
+
+
+                    <a
+                        href="#catalogo"
+                        class="btn btn-primary">
+
+                        Ver produtos ↓
+
+                    </a>
+
+
+                    <a
+                        href="https://goo.su/wXcxJn"
+                        target="_blank"
+                        class="btn btn-secondary">
+
+                        💬 Fazer orçamento
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="hero-card">
+
+
+                <div class="hero-card-icon">
+
+                    🩺
+
+                </div>
+
+
+                <h3>
+
+                    Impressão 3D
+                    personalizada
+
+                </h3>
+
+
+                <p>
+
+                    Crie produtos pensados para
+                    sua rotina, sua empresa e
+                    sua identidade.
+
+                </p>
+
+
+                <strong>
+
+                    ✓ Personalização com sua logo
+
+                </strong>
+
+
+                <strong>
+
+                    ✓ Produção sob encomenda
+
+                </strong>
+
+
+                <strong>
+
+                    ✓ Diversos modelos e cores
+
+                </strong>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PERSONALIZAÇÃO
+    ====================================================== -->
+
+    <section
+        class="custom"
+        id="personalizacao">
+
+
+        <div class="custom-box">
+
+
+            <div>
+
+                <h2>
+
+                    Sua marca também pode
+                    fazer parte da peça.
+
+                </h2>
+
+
+                <p>
+
+                    Todos os produtos deste catálogo
+                    podem ser personalizados com a
+                    <strong>logo da sua empresa</strong>.
+
+                    Uma forma criativa de transformar
+                    um produto útil em uma experiência
+                    que representa a sua marca.
+
+                </p>
+
+            </div>
+
+
+            <div class="custom-highlight">
+
+                ✦ Personalize com sua logo
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CATÁLOGO
+    ====================================================== -->
+
+    <main
+        class="catalog"
+        id="catalogo">
+
+
+        <div class="section-heading">
+
+
+            <span>
+                Catálogo
+            </span>
+
+
+            <h2>
+
+                Escolha.
+                Personalize.
+                Crie.
+
+            </h2>
+
+
+            <p>
+
+                Encontre o produto ideal para sua
+                rotina. Para pedidos em quantidade,
+                consulte também a possibilidade
+                de personalização.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- BUSCA -->
+
+        <div class="search-area">
+
+
+            <span class="search-icon">
+
+                🔎
+
+            </span>
+
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Digite o nome do produto..."
+                autocomplete="off">
+
+
+        </div>
+
+
+
+        <!-- PRODUTOS -->
+
+        <div
+            class="products-grid"
+            id="products">
+
+
+            <div
+                class="no-results"
+                id="noResults">
+
+                Nenhum produto encontrado.
+                Tente outro nome.
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FRASE
+    ====================================================== -->
+
+    <section class="quote-section">
+
+
+        <div class="quote">
+
+
+            <div class="quote-mark">
+
+                “
+
+            </div>
+
+
+            <h2>
+
+                O que você imagina,
+                a gente transforma em peça.
+
+            </h2>
+
+
+            <p>
+
+                Tecnologia + criatividade +
+                impressão 3D
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="cta">
+
+
+        <div class="cta-box">
+
+
+            <h2>
+
+                Gostou de algum produto?
+
+                <span>
+                    Vamos criar juntos.
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Entre em contato pelo WhatsApp,
+                envie o produto que você gostou e
+                conte como gostaria de personalizá-lo.
+
+                <br><br>
+
+                Também desenvolvemos peças
+                personalizadas para empresas,
+                profissionais e eventos.
+
+            </p>
+
+
+            <a
+                href="https://goo.su/wXcxJn"
+                target="_blank"
+                class="btn btn-primary">
+
+                💬 Quero fazer meu orçamento
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+
+                <!-- LOGO NO RODAPÉ -->
+
+                <img
+                    src="./logo.png"
+                    alt="Crie Geremias"
+                    class="footer-logo"
+                    onerror="logoNaoEncontrada(this)"
+                >
+
+
+                <strong>
+
+                    Crie Geremias
+
+                </strong>
+
+
+                <p>
+
+                    Impressão 3D personalizada
+                    para transformar ideias
+                    em objetos reais.
+
+                </p>
+
+
+                <p>
+
+                    <strong>
+
+                        Pensou? A gente cria.
+
+                    </strong>
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+
+                <h4>
+
+                    Catálogo
+
+                </h4>
+
+
+                <a href="#catalogo">
+
+                    Produtos
+
+                </a>
+
+
+                <a href="#personalizacao">
+
+                    Personalização
+
+                </a>
+
+
+                <a
+                    href="https://goo.su/wXcxJn"
+                    target="_blank">
+
+                    Solicitar orçamento
+
+                </a>
+
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+
+                <h4>
+
+                    Fale com a gente
+
+                </h4>
+
+
+                <p>
+
+                    💬 Atendimento pelo WhatsApp
+
+                </p>
+
+
+                <a
+                    href="https://goo.su/wXcxJn"
+                    target="_blank">
+
+                    Clique aqui para conversar
+
+                </a>
+
+
+                <p>
+
+                    ✦ Produtos sob encomenda
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+
+            <span>
+
+                © 2026 Crie Geremias.
+                Todos os direitos reservados.
+
+            </span>
+
+
+            <span>
+
+                Impressão 3D • Criatividade • Personalização
+
+            </span>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         WHATSAPP FLUTUANTE
+    ====================================================== -->
+
+    <a
+        href="https://goo.su/wXcxJn"
+        target="_blank"
+        class="floating-whatsapp"
+        aria-label="Falar pelo WhatsApp">
+
+        💬
+
+    </a>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+        /* =====================================================
+           WHATSAPP
+        ===================================================== */
+
+        const whatsapp =
+            "https://goo.su/wXcxJn";
+
+
+
+        /* =====================================================
+           FUNÇÃO PARA CORRIGIR CAMINHOS DAS IMAGENS
+           
+           Essa é uma das principais correções.
+
+           Ela transforma:
+           
+           pulmão.jpeg
+
+           em um caminho seguro para o navegador:
+           
+           ./pulm%C3%A3o.jpeg
+        ===================================================== */
+
+        function caminhoImagem(nomeArquivo) {
+
+            return "./" +
+                nomeArquivo
+                    .split("/")
+                    .map(parte => encodeURIComponent(parte))
+                    .join("/");
+        }
+
+
+
+        /* =====================================================
+           PRODUTOS
+        ===================================================== */
+
+        const produtos = [
+
+
+            {
+                nome: "Frasco",
+                peso: "22 g",
+                imagem: "Frasco.jpeg",
+                preco1: 10,
+                preco10: 8
+            },
+
+
+            {
+                nome: "Frasco Cruz",
+                peso: "57 g",
+                imagem: "frasco_pequeno_cruz.jpeg",
+                preco1: 16,
+                preco10: 14
+            },
+
+
+            {
+                nome: "Frascos Pequenos",
+                peso: "14 g",
+                imagem: "Frasco_pequno.jpeg",
+                preco1: 10,
+                preco10: 8
+            },
+
+
+            {
+                nome: "Conta-gotas",
+                peso: "14 g",
+                imagem: "Conta_gotas.jpeg",
+                preco1: 10,
+                preco10: 8
+            },
+
+
+            {
+                nome: "Frascos Dia da Semana",
+                peso: "151 g",
+                imagem: "Dias_da_semana.jpeg",
+                preco1: 35,
+                preco10: 30
+            },
+
+
+            {
+                nome: "Guarda-remédios",
+                peso: "98 g",
+                imagem: "gaveta_remédios.jpeg",
+                preco1: 20,
+                preco10: 18
+            },
+
+
+            {
+                nome: "Frasco Cruz Vermelho",
+                peso: "55 g",
+                imagem: "frasco_cruz_vermelho.jpeg",
+                preco1: 16,
+                preco10: 14
+            },
+
+
+            {
+                nome: "Porta-comprimidos",
+                peso: "62 g",
+                imagem: "porta_comprimidos.jpeg",
+                preco1: 16,
+                preco10: 14
+            },
+
+
+            {
+                nome: "Mala de Remédios",
+                peso: "380 g",
+                imagem: "maleta_comprimidos.jpeg",
+                preco1: 60,
+                preco10: 55
+            },
+
+
+            {
+                nome: "Caixa de Transporte",
+                peso: "248 g",
+                imagem: "caixa_de_transporte.jpeg",
+                preco1: 50,
+                preco10: 40
+            },
+
+
+            {
+                nome: "Estojo Canetas Mounjaro",
+                peso: "222 g",
+                imagem: "porta_caenas_de_aplicação.jpeg",
+                preco1: 40,
+                preco10: 36
+            },
+
+
+            {
+                nome: "Porta-comprimidos Pequeno",
+                peso: "16 g",
+                imagem: "porta_capsulas_comprido.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Suporte para Frascos",
+                peso: "21 g",
+                imagem: "suporte_para_frascos.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Estojo Colírio",
+                peso: "25 g",
+                imagem: "Estojo_colírio.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Frasco Mini",
+                peso: "4 g",
+                imagem: "fracos_capsulas.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Kit Frascos",
+                peso: "72 g",
+                imagem: "portas_frascos.jpeg",
+                preco1: 21,
+                preco10: 18
+            },
+
+
+            {
+                nome: "Frascos",
+                peso: "147 g",
+                imagem: "pote_para_frascos.jpeg",
+                preco1: 32,
+                preco10: 30
+            },
+
+
+            {
+                nome: "Pulmão",
+                peso: "13 g",
+                imagem: "pulmão.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Chaveiro Telescópio",
+                peso: "6 g",
+                imagem: "chaveiro_telescópio.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Coração",
+                peso: "14 g",
+                imagem: "coração.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Sistema Sanguíneo",
+                peso: "16 g",
+                imagem: "sistema_sanguíneo.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Caveira",
+                peso: "420 g",
+                imagem: "caveira.jpeg",
+                preco1: 75,
+                preco10: 70
+            },
+
+
+            {
+                nome: "Chaveiro Porta-comprimidos",
+                peso: "12 g",
+                imagem: "chaveiro_comprimidos.jpeg",
+                preco1: 15,
+                preco10: 12
+            },
+
+
+            {
+                nome: "Porta-canetas Enfermeira",
+                peso: "138 g",
+                imagem: "porta_canetas_médico.jpeg",
+                preco1: 32,
+                preco10: 30
+            },
+
+
+            {
+                nome: "Porta-caneta Enfermeira",
+                peso: "153 g",
+                imagem: "porta_canetas_médico (2).jpeg",
+                preco1: 32,
+                preco10: 30
+            },
+
+
+            {
+                nome: "Porta-Oxímetro",
+                peso: "37 g",
+                imagem: "port_oxímetro.jpeg",
+                preco1: 30,
+                preco10: 20
+            }
+
+        ];
+
+
+
+        /* =====================================================
+           DINHEIRO
+        ===================================================== */
+
+        function dinheiro(valor) {
+
+            return valor.toLocaleString(
+                "pt-BR",
+                {
+                    style: "currency",
+                    currency: "BRL"
+                }
+            );
+
+        }
+
+
+
+        /* =====================================================
+           PREÇO 20 UNIDADES
+        ===================================================== */
+
+        function calcularPreco20(produto) {
+
+            return Math.max(
+                produto.preco10 - 1,
+                1
+            );
+
+        }
+
+
+
+        /* =====================================================
+           PREÇO 30 UNIDADES
+        ===================================================== */
+
+        function calcularPreco30(produto) {
+
+            return Math.max(
+                produto.preco10 - 2,
+                1
+            );
+
+        }
+
+
+
+        /* =====================================================
+           CRIAÇÃO DO CARD
+        ===================================================== */
+
+        function criarProduto(produto) {
+
+
+            const preco20 =
+                calcularPreco20(produto);
+
+
+            const preco30 =
+                calcularPreco30(produto);
+
+
+            const caminho =
+                caminhoImagem(produto.imagem);
+
+
+            return `
+
+                <article
+                    class="product-card"
+                    data-name="${produto.nome.toLowerCase()}">
+
+
+                    <div class="product-image">
+
+
+                        <img
+
+                            src="${caminho}"
+
+                            alt="${produto.nome}"
+
+                            onerror="imagemNaoEncontrada(this, '${produto.nome.replace(/'/g, "\\'")}')"
+
+                        >
+
+
+                    </div>
+
+
+
+                    <div class="product-info">
+
+
+                        <h3 class="product-name">
+
+                            ${produto.nome}
+
+                        </h3>
+
+
+                        <div class="product-weight">
+
+                            Peso aproximado:
+
+                            <strong>
+
+                                ${produto.peso}
+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="personalized">
+
+                            ✦ PERSONALIZÁVEL COM SUA LOGO
+
+                        </div>
+
+
+
+                        <div class="prices">
+
+
+                            <div class="price-box">
+
+                                <small>
+                                    1 unidade
+                                </small>
+
+                                <div class="price">
+
+                                    ${dinheiro(produto.preco1)}
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="price-box highlight">
+
+                                <small>
+                                    10 unidades
+                                </small>
+
+                                <div class="price">
+
+                                    ${dinheiro(produto.preco10)}
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="price-box">
+
+                                <small>
+                                    20 unidades
+                                </small>
+
+                                <div class="price">
+
+                                    ${dinheiro(preco20)}
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="price-box">
+
+                                <small>
+                                    30 unidades
+                                </small>
+
+                                <div class="price">
+
+                                    ${dinheiro(preco30)}
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="price-note">
+
+                            * Valores por unidade conforme
+                            a quantidade escolhida.
+
+                        </div>
+
+
+
+                        <a
+
+                            href="${whatsapp}"
+
+                            target="_blank"
+
+                            class="product-whatsapp">
+
+                            💬 Consultar / Personalizar
+
+                        </a>
+
+
+                    </div>
+
+
+                </article>
+
+            `;
+
+        }
+
+
+
+        /* =====================================================
+           IMAGEM NÃO ENCONTRADA
+        ===================================================== */
+
+        function imagemNaoEncontrada(imagem, nomeProduto) {
+
+            console.warn(
+                "Imagem não encontrada:",
+                imagem.src
+            );
+
+
+            imagem.style.display = "none";
+
+
+            const container =
+                imagem.parentElement;
+
+
+            if (
+                container.querySelector(
+                    ".image-fallback"
+                )
+            ) {
+
+                return;
+
+            }
+
+
+            const aviso =
+                document.createElement("div");
+
+
+            aviso.className =
+                "image-fallback";
+
+
+            aviso.innerHTML = `
+
+                <div class="image-fallback-icon">
+                    ✦
+                </div>
+
+                <strong>
+                    ${nomeProduto}
+                </strong>
+
+                <small>
+                    Crie Geremias • Impressão 3D
+                </small>
+
+            `;
+
+
+            container.appendChild(aviso);
+
+        }
+
+
+
+        /* =====================================================
+           FALLBACK DA LOGO
+        ===================================================== */
+
+        function logoNaoEncontrada(imagem) {
+
+            console.warn(
+                "Logo não encontrada:",
+                imagem.src
+            );
+
+
+            imagem.style.display = "none";
+
+        }
+
+
+
+        /* =====================================================
+           RENDERIZAÇÃO
+        ===================================================== */
+
+        const productsContainer =
+            document.getElementById("products");
+
+
+        const noResults =
+            document.getElementById("noResults");
+
+
+        function renderProdutos(lista) {
+
+
+            productsContainer.innerHTML = "";
+
+
+            if (lista.length === 0) {
+
+                noResults.style.display =
+                    "block";
+
+
+                productsContainer.appendChild(
+                    noResults
+                );
+
+
+                return;
+
+            }
+
+
+            noResults.style.display =
+                "none";
+
+
+            lista.forEach(produto => {
+
+                productsContainer.insertAdjacentHTML(
+
+                    "beforeend",
+
+                    criarProduto(produto)
+
+                );
+
+            });
+
+        }
+
+
+
+        /* =====================================================
+           INICIALIZAÇÃO
+        ===================================================== */
+
+        renderProdutos(produtos);
+
+
+
+        /* =====================================================
+           BUSCA
+        ===================================================== */
+
+        const search =
+            document.getElementById("search");
+
+
+        search.addEventListener(
+            "input",
+            function () {
+
+
+                const termo =
+                    this.value
+                        .toLowerCase()
+                        .normalize("NFD")
+                        .replace(
+                            /[\u0300-\u036f]/g,
+                            ""
+                        )
+                        .trim();
+
+
+                const filtrados =
+                    produtos.filter(
+                        produto => {
+
+
+                            const nome =
+                                produto.nome
+                                    .toLowerCase()
+                                    .normalize("NFD")
+                                    .replace(
+                                        /[\u0300-\u036f]/g,
+                                        ""
+                                    );
+
+
+                            return nome.includes(
+                                termo
+                            );
+
+                        }
+                    );
+
+
+                renderProdutos(
+                    filtrados
+                );
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
